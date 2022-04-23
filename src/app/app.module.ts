@@ -15,7 +15,9 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
 import { HomeComponent } from './components/views/home/home.component';
-
+import { CategoriesComponent } from './components/views/categories/categories.component';
+import { CategoryReadComponent } from './components/views/categories/category-read/category-read.component';
+import {MatTableModule} from '@angular/material/table';
 
 
 
@@ -25,7 +27,9 @@ import { HomeComponent } from './components/views/home/home.component';
     HeaderComponent,
     FooterComponent,
     NavComponent,
-    HomeComponent
+    HomeComponent,
+    CategoriesComponent,
+    CategoryReadComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +40,8 @@ import { HomeComponent } from './components/views/home/home.component';
     MatButtonModule,
     MatIconModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
