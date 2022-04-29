@@ -2,7 +2,7 @@ import { Router } from '@angular/router';
 import { CategoryService } from './../category.service';
 import { Category } from './../category.model';
 import { Component, OnInit } from '@angular/core';
-import { MatSnackBar } from '@angular/material/snack-bar';
+
 
 @Component({
   selector: 'app-category-create',
@@ -35,6 +35,9 @@ export class CategoryCreateComponent implements OnInit {
         }
       }
     )
+  }
+  cancel(){
+    this.router.navigate(["categories"]);
   }
   
 
