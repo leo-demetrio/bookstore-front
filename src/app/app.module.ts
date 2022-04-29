@@ -1,3 +1,4 @@
+import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -18,7 +19,10 @@ import { HomeComponent } from './components/views/home/home.component';
 import { CategoryReadComponent } from './components/views/categories/category-read/category-read.component';
 import {MatTableModule} from '@angular/material/table';
 import { HttpClientModule } from '@angular/common/http';
-
+import { CategoryCreateComponent } from './components/views/categories/category-create/category-create.component';
+import { MatInputModule } from '@angular/material/input'
+import { MatFormFieldControl, MatFormFieldModule } from '@angular/material/form-field';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 
 @NgModule({
@@ -28,7 +32,8 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     NavComponent,
     HomeComponent,
-    CategoryReadComponent
+    CategoryReadComponent,
+    CategoryCreateComponent
   ],
   imports: [
     BrowserModule,
@@ -43,6 +48,10 @@ import { HttpClientModule } from '@angular/common/http';
     MatTableModule,
     HttpClientModule,
     MatIconModule,
+    FormsModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatSnackBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
