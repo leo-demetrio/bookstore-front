@@ -24,6 +24,19 @@ export class CategoryService {
     const url = `${this.baseUrl}/categories`;
     return this.http.post<Category>(url, category);
   }
+  findById(id: String): Observable<Category> {
+    const url = `${this.baseUrl}/categories/${id}`;
+    return this.http.get<Category>(url);
+  }
+  delete(id: String): Observable<Category> {
+    const url = `${this.baseUrl}/categories/${id}`;
+    return this.http.delete<Category>(url);
+  }
+  edit(id: String, category: Category): Observable<Category> {
+    const url = `${this.baseUrl}/categories/${id}`;
+    return this.http.put<Category>(url, category);
+  }
+ 
   message(str: String): void {
     this._snack.open(`${str}`, 'Ok', {
       horizontalPosition: 'end',
