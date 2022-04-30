@@ -29,7 +29,7 @@ export class CategoryCreateComponent implements OnInit {
         this.categoryService.message("Category Created");
       },
       err => {
-        console.log()
+        console.log(err)
         for(let i = 0; i < err.error.errors.length; i++){
           this.categoryService.message(err.error.errors[i].message)
         }

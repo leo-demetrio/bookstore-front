@@ -23,6 +23,8 @@ import { CategoryCreateComponent } from './components/views/categories/category-
 import { MatInputModule } from '@angular/material/input'
 import { MatFormFieldControl, MatFormFieldModule } from '@angular/material/form-field';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { CategoryDeleteComponent } from './components/views/categories/category-delete/category-delete.component';
+import { CategoryEditComponent } from './components/views/categories/category-edit/category-edit.component';
 
 
 @NgModule({
@@ -33,7 +35,9 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     NavComponent,
     HomeComponent,
     CategoryReadComponent,
-    CategoryCreateComponent
+    CategoryCreateComponent,
+    CategoryDeleteComponent,
+    CategoryEditComponent
   ],
   imports: [
     BrowserModule,

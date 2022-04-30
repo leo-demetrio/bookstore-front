@@ -26,11 +26,14 @@ export class CategoryReadComponent implements OnInit {
     this.categoryService.findAll().subscribe(      
       res => {
         this.categories = res;
-      } 
+      },
+      err => {
+        this.categoryService.message("Configure your internet");
+      }
     );
   }
   navigateCreate(){
-    this.router.navigate(["category/create"]);
+    this.router.navigate(["categories/create"]);
   }
 
 }
