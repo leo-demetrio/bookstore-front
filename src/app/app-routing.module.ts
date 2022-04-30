@@ -1,3 +1,4 @@
+import { BookReadAllComponent } from './components/views/book/book-read-all/book-read-all.component';
 import { CategoryEditComponent } from './components/views/categories/category-edit/category-edit.component';
 import { CategoryCreateComponent } from './components/views/categories/category-create/category-create.component';
 import { CategoryReadComponent } from './components/views/categories/category-read/category-read.component';
@@ -11,7 +12,8 @@ const routes: Routes = [
   {path: 'categories', component: CategoryReadComponent},
   {path: 'categories/create', component: CategoryCreateComponent},
   {path: 'categories/delete/:id', component: CategoryDeleteComponent},
-  {path: 'categories/edit/:id', component: CategoryEditComponent}
+  {path: 'categories/edit/:id', component: CategoryEditComponent},
+  {path: 'categories/:id_cat/books', component: BookReadAllComponent},
 ];
 
 @NgModule({
