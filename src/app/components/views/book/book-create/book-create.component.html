@@ -1,0 +1,23 @@
+<form>
+    <h1>Create book</h1>
+    <mat-form-field class="form">
+        <mat-label>Title</mat-label>
+        <input [(ngModel)]="book.title" [formControl]="title" required matInput type="text" name="name" placeholder="book title" maxlength="15">
+        <mat-error *ngIf="title.invalid">{{ getMessage() }}</mat-error>
+    </mat-form-field>
+    <mat-form-field class="form">
+        <mat-label>Name author</mat-label>
+        <input [(ngModel)]="book.name_author" [formControl]="name_author" required matInput type="text" name="name_author" placeholder="book title" maxlength="100">
+        <mat-error *ngIf="name_author.invalid">{{ getMessage() }}</mat-error>
+    </mat-form-field>    
+    <mat-form-field class="form">
+        <mat-label>Text</mat-label>
+        <textarea [(ngModel)]="book.text" [formControl]="text" required matInput type="textarea" name="text" placeholder="Text" maxlength="200" rows="8"> </textarea>
+        <mat-error *ngIf="text.invalid">{{ getMessage() }}</mat-error>
+    </mat-form-field>
+    
+    <div class="buttons">            
+        <button [disabled]="getMessage()" (click)="create()" class="mat-elevation-z6" mat-stroked-button color="primary">New Category</button>
+        <button (click)="cancel()" class="mat-elevation-z6" mat-stroked-button color="warn">Cancel</button>        
+    </div>
+</form>
