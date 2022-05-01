@@ -28,13 +28,13 @@ export class BookReadAllComponent implements OnInit {
   findAll(){
     this.bookService.findAllByCategory(this.id_cat!).subscribe(
       res =>  {
-        res ? this.bookService.message("Not books") : this.books = res;
+        res ? this.books = res : this.bookService.message("Not books");
         
       }
     )
   }
   navigateCreate(){
-    this.router.navigate(["books/create"]);
+    this.router.navigate([`categories/${this.id_cat}/books/create`]);
   }
 
 }
