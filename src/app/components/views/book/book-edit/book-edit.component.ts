@@ -47,7 +47,7 @@ export class BookEditComponent implements OnInit {
   }
  
   edit(): void {
-    this.bookService.edit( this.id_cat, this.book).subscribe(
+    this.bookService.edit(this.book).subscribe(
       res => {
         this.router.navigate([`categories/${this.id_cat}/books`])
         this.bookService.message("Book Edited");
