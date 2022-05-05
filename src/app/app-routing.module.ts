@@ -1,3 +1,4 @@
+import { BookReadComponent } from './components/views/book/book-read/book-read.component';
 import { BookDeleteComponent } from './components/views/book/book-delete/book-delete.component';
 import { BookEditComponent } from './components/views/book/book-edit/book-edit.component';
 import { BookCreateComponent } from './components/views/book/book-create/book-create.component';
@@ -19,6 +20,7 @@ const routes: Routes = [
   {path: 'categories/:id_cat/books', component: BookReadAllComponent},
   {path: 'categories/:id_cat/books/create', component: BookCreateComponent},
   {path: 'categories/:id_cat/books/:id/edit', component: BookEditComponent},
+  {path: 'categories/:id_cat/books/:id/read', component: BookReadComponent},
   {path: 'categories/:id_cat/books/:id/delete', component: BookDeleteComponent},
 ];
 
