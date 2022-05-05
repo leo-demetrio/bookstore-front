@@ -28,9 +28,9 @@ export class BookService {
     const url = `${this.baseUrl}/books/${id}`;
     return this.http.get<Book>(url);
   }
-  delete(id: String): Observable<Book> {
+  delete(id: String): Observable<void> {
     const url = `${this.baseUrl}/books/${id}`;
-    return this.http.delete<Book>(url);
+    return this.http.delete<void>(url);
   }
   edit(book: Book): Observable<Book> {
     const url = `${this.baseUrl}/books/${book.id}`;
