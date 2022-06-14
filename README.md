@@ -1,26 +1,54 @@
-# Bookstore
+# ANGULAR BOOKSTORE INTEGRATED API JAVA SPRINGBOOT
+<h2>Clone project</h2>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
+```
+git clone https://github.com/leo-demetrio/bookstore-front
+
+```
+<h2>Init project</h2>
+
+```
+npm install
+```
+
+```
+npm start
+```
+<details>
+  <summary> <h2>Click to expand for PRINCIPAL SCREENS</h2></summary>
+  
+  ```
+  http://localhost:4200/categories/
+  ```
+  ![categories](https://user-images.githubusercontent.com/47660967/173703561-528e4c11-fc43-4ce5-a281-9772c3ae31f2.png)
+  
+  ```
+  http://localhost:4200/categories/1/books
+  ```
+  
+![books](https://user-images.githubusercontent.com/47660967/173703563-31da62a3-109e-4a75-8f19-2be6660c38f5.png)
+  
+  ```
+  http://localhost:4200/categories/1/books/1/read
+  ```
+  
+![books_info](https://user-images.githubusercontent.com/47660967/173703564-90e872b4-b7d0-4dda-8b73-3a9e058229d8.png)
+  
+</details>
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
 ## Further help
 
